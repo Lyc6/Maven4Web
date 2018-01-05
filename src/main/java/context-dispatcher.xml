@@ -30,17 +30,7 @@
 	</bean>
 
 	<!-- MVC Annotation Driven -->
-	<mvc:annotation-driven conversion-service="conversionService" />
-	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
-		<property name="converters">
-			<list>
-				<!-- 这里使用string to date可以将dao在jsp到controller转换的时候直接将string格式的日期转换为date类型 -->
-				<bean class="com.cmower.common.plugin.StringToDateConverter" />
-				<!-- 为type为file类型的数据模型增加转换器 -->
-				<bean class="com.cmower.common.plugin.CommonsMultipartFileToString" />
-			</list>
-		</property>
-	</bean>
+	<mvc:annotation-driven  />
 
 	<!-- 静态资源（常用组件、图片、样式表、JavaScript、上传文件目录） -->
 	<!-- 静态资源(js、image等)的访问 -->
