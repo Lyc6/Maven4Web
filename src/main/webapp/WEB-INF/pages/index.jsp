@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>maven for springmvc web project</title>
+<title>maven for web project</title>
 </head>
 <body>
 hello cmower
