@@ -34,6 +34,10 @@
 	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="converters">
 			<list>
+				<!-- 这里使用string to date可以将dao在jsp到controller转换的时候直接将string格式的日期转换为date类型 -->
+				<bean class="com.cmower.common.plugin.StringToDateConverter" />
+				<!-- 为type为file类型的数据模型增加转换器 -->
+				<bean class="com.cmower.common.plugin.CommonsMultipartFileToString" />
 			</list>
 		</property>
 	</bean>
