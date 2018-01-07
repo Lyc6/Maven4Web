@@ -48,11 +48,6 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<!-- 配置session过期时间120分钟 -->
-	<session-config>
-		<session-timeout>120</session-timeout>
-	</session-config>
-
 	<error-page>
 		<error-code>404</error-code>
 		<location>/404.jsp</location>
