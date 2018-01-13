@@ -31,6 +31,6 @@
 	<mvc:annotation-driven />
 
 	<!-- 静态资源（常用组件、图片、样式表、JavaScript、上传文件目录） -->
-	<mvc:default-servlet-handler />
+	<mvc:resources location="/resources/" mapping="/resources/**"/>
 
 </beans>  
