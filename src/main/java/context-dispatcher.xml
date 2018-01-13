@@ -23,7 +23,7 @@
 
 		<!-- 将jsp页面放置在web-info中可以保护这些页面不被浏览器直接访问 -->
 		<property name="prefix" value="/WEB-INF/pages/" />
-		<property name="suffix" value=".jsp"></property>
+		<property name="suffix" value=".jsp" />
 		<!-- 通过设置前缀和后缀来缩短view的路径，例如在controller中指定“1/adminlte”就代表的是“/WEB-INF/pages/1/adminlte.jsp” -->
 	</bean>
 
